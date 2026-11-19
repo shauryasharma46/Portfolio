@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shaurya Sharma – Computer Science Engineering Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--surface:#ffffff;--ink:#14213d;--muted:#51607a;--line:#dde2ea;--accent:#1d5fd6;--tint:#e6eefc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1628;--surface:#17203a;--ink:#eaf0fb;--muted:#a3b0c8;--line:#2a3657;--accent:#7fa8ff;--tint:#1e2c52;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1628;--surface:#17203a;--ink:#eaf0fb;--muted:#a3b0c8;--line:#2a3657;--accent:#7fa8ff;--tint:#1e2c52;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,Arial,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:20px;align-items:center;overflow-x:auto;padding-top:12px;padding-bottom:12px;white-space:nowrap}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:15px}
+nav a:hover{color:var(--ink)}
+nav .brand{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:800;color:var(--ink);margin-right:auto}
+.hero{padding:72px 0 56px}
+.hero h1{font-size:clamp(46px,9vw,88px);font-weight:800;letter-spacing:-.02em}
+.hero p.lead{font-size:clamp(19px,2.6vw,23px);max-width:34em;color:var(--muted);margin:22px 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--bg)}
+.btn.s{color:var(--accent)}
+.status{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:10px;padding:18px 22px;max-width:560px}
+.status dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:15.5px}
+.status dt{color:var(--muted)}
+.status dd{margin:0;font-weight:500}
+section{padding:48px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4.5vw,38px);margin-bottom:24px}
+.about p{max-width:38em;margin:0 0 14px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.box h3{font-size:18px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--tint);padding:3px 12px;border-radius:999px;font-size:14.5px;font-weight:500}
+.item{margin-bottom:30px}
+.item:last-child{margin-bottom:0}
+.item h3{font-size:22px}
+.meta{color:var(--muted);font-size:15.5px;margin:4px 0 10px}
+.item ul{margin:0;padding-left:20px;max-width:40em}
+.item li{margin-bottom:6px}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.proj .box h3{font-size:21px;margin-bottom:6px}
+.proj ul{padding-left:20px;margin:12px 0 0}
+.proj li{margin-bottom:6px}
+.edu p{margin:0 0 8px}
+.contact p{max-width:34em;color:var(--muted);margin:0 0 22px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14.5px;border-top:1px solid var(--line)}
+@media (max-width:520px){.hero{padding-top:44px}.status dl{grid-template-columns:1fr}.status dt{margin-top:6px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap">
+<span class="brand">Shaurya Sharma</span>
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></nav>
+
+<header class="wrap hero">
+<h1>Shaurya Sharma</h1>
+<p class="lead">Computer Science Engineering student who enjoys fixing things, keeping systems running, and building useful software.</p>
+<div class="btns">
+<a class="btn p" href="mailto:shaurya.sharma3050@gmail.com">Email me</a>
+<a class="btn s" href="https://linkedin.com/in/shaurya-sharma-5129a82a8" rel="noopener">View LinkedIn</a>
+</div>
+<div class="status">
+<dl>
+<dt>Studying</dt><dd>B.Tech CSE, Amity University Madhya Pradesh (2027)</dd>
+<dt>Latest role</dt><dd>IT Solutions Intern, Mondelez India</dd>
+<dt>Looking for</dt><dd>Systems, IT and software internships</dd>
+<dt>Based in</dt><dd>Gwalior, Madhya Pradesh, India</dd>
+</dl>
+</div>
+</header>
+
+<main class="wrap">
+<section id="about" class="about">
+<h2>About me</h2>
+<p>I'm a third-year B.Tech student with a CGPA of 8.27. I like work where I can solve real problems, whether that's troubleshooting an IT issue, cleaning up messy data, or building a web app people can use.</p>
+<p>This year I supported the IT team at Mondelez India with day-to-day operations and troubleshooting. Before that I worked with databases at RM Pesticides, writing SQL queries and keeping data accurate. I'm now looking for an internship where I can learn more about systems, networks and infrastructure.</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="box"><h3>Systems and IT</h3><ul class="chips"><li>Troubleshooting</li><li>IT support</li><li>Windows</li><li>Linux</li><li>Documentation</li></ul></div>
+<div class="box"><h3>Networking basics</h3><ul class="chips"><li>TCP/IP</li><li>OSI model</li><li>IP addressing</li><li>LAN</li><li>File sharing</li></ul></div>
+<div class="box"><h3>Data</h3><ul class="chips"><li>SQL</li><li>MySQL</li><li>DBMS</li><li>Data validation</li><li>Data cleansing</li></ul></div>
+<div class="box"><h3>Programming</h3><ul class="chips"><li>Python</li><li>C</li><li>C++</li><li>Java</li><li>OOP</li><li>Basic scripting</li></ul></div>
+<div class="box"><h3>Web and tools</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>Django</li><li>Git</li><li>GitHub</li><li>VS Code</li><li>Android Studio</li><li>Firebase</li></ul></div>
+<div class="box"><h3>Machine learning</h3><ul class="chips"><li>K-Means clustering</li><li>Data preprocessing</li><li>Visualization</li></ul></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="item">
+<h3>IT Solutions Intern</h3>
+<p class="meta">Mondelez India Limited, Malanpur | July – August 2026</p>
+<ul>
+<li>Supported the IT team with day-to-day operations and technical troubleshooting.</li>
+<li>Gained practical exposure to enterprise systems and business technology processes.</li>
+<li>Worked with team members to resolve issues and sharpen problem-solving skills.</li>
+</ul>
+</div>
+<div class="item">
+<h3>DBMS Intern</h3>
+<p class="meta">RM Pesticides | July – August 2025</p>
+<ul>
+<li>Managed and organized product, inventory and sales data using DBMS concepts.</li>
+<li>Wrote SQL queries for data retrieval and reporting.</li>
+<li>Kept data accurate through validation and cleansing, and supported basic database optimization.</li>
+</ul>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="proj">
+<div class="box">
+<h3>Resource Sharing Web App</h3>
+<p class="meta">Python, Django, SQL, HTML, CSS</p>
+<p>A central place for students to upload, search and share academic resources.</p>
+<ul>
+<li>Built resource management and categorization with Django and SQL.</li>
+<li>Connected the interface to the database for fast storage and retrieval.</li>
+<li>Designed a clean layout that makes resources easy to find.</li>
+</ul>
+</div>
+<div class="box">
+<h3>Customer Segmentation</h3>
+<p class="meta">Python, Machine Learning</p>
+<p>A K-Means clustering model that groups customers by behavior.</p>
+<ul>
+<li>Handled preprocessing, feature selection and visualization.</li>
+<li>Turned the clusters into insights for targeted marketing.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="education" class="edu">
+<h2>Education</h2>
+<div class="item">
+<h3>B.Tech in Computer Science Engineering</h3>
+<p class="meta">Amity University Madhya Pradesh | 2023 – 2027 | CGPA 8.27</p>
+</div>
+<p>Senior School Certificate (CBSE), PCM + Computer Science | 2023 | 65.2%</p>
+<p>Secondary School Examination (CBSE) | 2021 | 70%</p>
+<h3 style="font-size:20px;margin:28px 0 10px">Activities</h3>
+<ul style="max-width:40em;padding-left:20px;margin:0">
+<li>Took part in several hackathons, including SIH and HackBMU, working in teams on real-world problems.</li>
+<li>Core coordinator for college events, including running hackathons.</li>
+</ul>
+</section>
+
+<section id="contact" class="contact">
+<h2>Get in touch</h2>
+<p>I'm open to internships and entry-level roles. Send me a message and I'll reply as soon as I can.</p>
+<div class="btns">
+<a class="btn p" href="mailto:shaurya.sharma3050@gmail.com">shaurya.sharma3050@gmail.com</a>
+<a class="btn s" href="tel:+919244329136">+91 92443 29136</a>
+<a class="btn s" href="https://linkedin.com/in/shaurya-sharma-5129a82a8" rel="noopener">LinkedIn</a>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Shaurya Sharma. Gwalior, India.</div></footer>
+</body>
+</html>
